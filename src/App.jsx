@@ -1,10 +1,16 @@
 import logo from "./logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import MyNavBar from "./components/MyNavBar";
+import { Container } from "react-bootstrap";
+import { Row } from "react-bootstrap";
+import { Col } from "react-bootstrap";
+import { card } from "react-bootstrap";
 
 function App() {
   return (
     <div className="App">
+      <MyNavBar />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -18,6 +24,14 @@ function App() {
           Learn React
         </a>
       </header>
+      <main>
+        <Container>
+          <Row></Row>
+        </Container>
+      </main>
+      <footer>
+        <MyFooter />
+      </footer>
     </div>
   );
 }
